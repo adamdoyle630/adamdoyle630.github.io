@@ -1,6 +1,9 @@
 
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
 .custom-header {
-    background-image: url("../img/background.jpg");
+    /*background-image: url("../img/background.jpg");*/
     background-size: cover;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;;
 }
@@ -10,13 +13,15 @@
     text-shadow:1px 1px 10px #000, 1px 1px 10px rgb(29, 29, 29);
 }
 
-.custom-header-text {
-    color: white;
-    font-size: x-large;
+.title-text {
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 400;
+    font-size: 45pt;
 }
 
 .bg-shade1 {
-    background-color:whitesmoke;
+    background-color:rgb(221, 221, 221);
 }
 
 .bg-shade2 {
@@ -71,3 +76,20 @@
   .java {width: 80%;}
   .python {width: 60%;}
   .c-cpp {width: 40%;}
+
+/* Profile Picture */
+.profile-pic {
+    position: relative;
+	height: 250px;
+	width: 200px;
+	margin: 10px;
+	background-image: url("../img/profile-pic.jpg");
+    background-position: center;
+    background-size: 200px;
+    box-shadow: 2px 3px 4px gray;
+}
+
+.btn-blue {
+    background-color:#4B9CD3;
+    color: white;
+}
