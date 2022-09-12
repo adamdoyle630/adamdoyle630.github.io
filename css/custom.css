@@ -46,3 +46,28 @@
     background: rgb(2,0,36);
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
 }
+
+/* Container for skill bars */
+.skills-container {
+    width: 100%;
+    background-color: #ddd;
+    padding: 5px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+  
+  .skills {
+    text-align: right;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    color: white;
+    background-color: #2196F3;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+  
+  .html-css {width: 50%;}
+  .java {width: 80%;}
+  .python {width: 60%;}
+  .c-cpp {width: 40%;}
