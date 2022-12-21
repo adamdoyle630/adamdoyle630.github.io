@@ -28,6 +28,18 @@ body {
     background-color: aliceblue;
 }
 
+.bg-shade3 {
+    background-color:rgb(111, 111, 196);
+}
+
+.bg-shade4 {
+    background-color:rgb(34, 54, 54);
+}
+
+.bg-shade5 {
+    background-color: dimgray;
+}
+
 .text-body {
     font-size: 1.15rem;
     font-family: var(--bs-body-font-family);
@@ -72,10 +84,11 @@ body {
     border-bottom-right-radius: 20px;
   }
   
-  .html-css {width: 50%;}
+  .html-css {width: 60%;}
   .java {width: 80%;}
   .python {width: 60%;}
   .c-cpp {width: 40%;}
+  .node-js {width: 40%;}
 
 /* Profile Picture */
 .profile-pic {
@@ -112,3 +125,13 @@ body {
 		margin-top: -30%;
         margin-left: -20%;
 	}
+
+.text-link {
+    font-size: 1.15rem;
+    font-family: var(--bs-body-font-family);
+    text-decoration: none;
+}
+
+.header-dark {
+    color:rgb(221, 221, 221);
+}
