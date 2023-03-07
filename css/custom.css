@@ -29,15 +29,15 @@ body {
 }
 
 .bg-shade3 {
-    background-color:rgb(111, 111, 196);
+    background-color:rgb(180, 180, 223);
 }
 
 .bg-shade4 {
-    background-color:rgb(34, 54, 54);
+    background-color:rgb(177, 198, 198);
 }
 
 .bg-shade5 {
-    background-color: dimgray;
+    background-color: rgb(215, 208, 208);
 }
 
 .text-body {
@@ -84,11 +84,11 @@ body {
     border-bottom-right-radius: 20px;
   }
   
-  .html-css {width: 60%;}
+  .html-css {width: 70%;}
   .java {width: 80%;}
   .python {width: 60%;}
-  .c-cpp {width: 40%;}
-  .node-js {width: 40%;}
+  .js-ts {width: 50%;}
+  .sql {width: 60%;}
 
 /* Profile Picture */
 .profile-pic {
@@ -132,6 +132,6 @@ body {
     text-decoration: none;
 }
 
-.header-dark {
+.header-lgt {
     color:rgb(221, 221, 221);
 }
