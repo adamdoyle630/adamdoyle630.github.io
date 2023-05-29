@@ -20,6 +20,11 @@ body {
     font-size: 45pt;
 }
 
+.about-div {
+    padding-top: 70px;
+    padding-bottom: 20px;
+}
+
 .bg-shade1 {
     background-color:rgb(221, 221, 221);
 }
@@ -99,9 +104,6 @@ body {
 	filter: grayscale(100%);
     background-position: center;
     background-size: 200px;
-	border-style: solid;
-	border-size: medium;
-	border-color: #4B9CD3; 
 }
 
 .profile-pic-container {
@@ -115,16 +117,11 @@ body {
 	box-shadow: 2px 3px 4px lightgray;
 }
 
-/* Button links */
 .btn-custom {
     background-color: white;
     color: black;
 	box-shadow: 2px 3px 4px lightgray;
 }
-	.img {
-		margin-top: -30%;
-        margin-left: -20%;
-	}
 
 .text-link {
     font-size: 1.15rem;
@@ -134,4 +131,8 @@ body {
 
 .header-lgt {
     color:rgb(221, 221, 221);
+}
+
+.jumbotron.bg-dark {
+    color: #FFFFFF;
 }
