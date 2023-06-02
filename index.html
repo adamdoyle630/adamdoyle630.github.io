@@ -125,7 +125,7 @@
                     <div class="col-lg-8">
                         <h1>Contact</h1>
                         <div class="divider"></div>
-                        <form action="https://script.google.com/macros/s/AKfycbxchavbdpj05K3WnDZpfJKlf0zwop7ZcCaPiDTBvzycosjtEnpTCfRNaq0YQ40DuNGK/exec" method="POST" onsubmit="return validateForm()" target="hidden_iframe">
+                        <form id="contactForm" action="https://script.google.com/macros/s/AKfycbxchavbdpj05K3WnDZpfJKlf0zwop7ZcCaPiDTBvzycosjtEnpTCfRNaq0YQ40DuNGK/exec" method="POST" target="hidden_iframe">
                             <div class="form-group">
                                 <label for="name">Name</label>
                                 <input type="text" class="form-control" id="name" name="name" placeholder="Enter name">
@@ -143,19 +143,18 @@
                         <iframe name="hidden_iframe" style="display:none;"></iframe>
                         <!-- <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSchojds7fDzzAYvLkb5sWFdtNWSh9ddqPF8M17GSkBbBbyI4Q/viewform?embedded=true" width="640" height="845" frameborder="0" marginheight="0" marginwidth="0"></iframe> -->
                         <script>
-                            function validateForm() {
-                                var name = document.getElementById('name').value;
-                                var email = document.getElementById('email').value;
-                                var message = document.getElementById('message').value;
+                            document.getElementById('contactForm').addEventListener('submit', function(event) {
+                                var name = document.getElementById('name').value.trim();
+                                var email = document.getElementById('email').value.trim();
+                                var message = document.getElementById('message').value.trim();
                               
                                 if (name === '' || email === '' || message === '') {
                                     alert('Please fill out all fields');
-                                    return false; // Prevent form submission
+                                    event.preventDefault(); // Prevent form submission
+                                    return;
                                 }
-                                
                                 alert("Contact form submitted successfully!")
-                                return true; // Allow form submission
-                            }
+                            })
                         </script>                            
                     </div>
                 </div>
