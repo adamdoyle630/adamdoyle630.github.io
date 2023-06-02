@@ -118,7 +118,7 @@ body {
 }
 
 .btn-custom {
-    background-color: white;
+    background-color: aliceblue;
     color: black;
 	box-shadow: 2px 3px 4px lightgray;
 }
@@ -133,6 +133,14 @@ body {
     color:rgb(221, 221, 221);
 }
 
-.jumbotron.bg-dark {
+.bg-dark {
     color: #FFFFFF;
+}
+
+.pad {
+    padding: 20px 10px 20px 10px;
+}
+
+.button-div {
+    padding: 0px 5px 0px 5px;
 }

@@ -4,7 +4,7 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
-        <meta name="author" content="" />
+        <meta name="author" content="Adam Doyle" />
         <title>Adam Doyle</title>
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Core theme CSS (includes Bootstrap)-->
@@ -30,8 +30,8 @@
             </div>
         </nav>
         <!-- About section-->
-        <section class="jumbotron" id="about">
-		  <div class="about-div container-sm px-4">
+        <section id="about">
+		  <div class="about-div container-sm">
 			<div class="row gx-4 justify-content-center">
 				<div class="profile-pic-container">
 					<div class="profile-pic">&nbsp;</div>
@@ -40,19 +40,19 @@
 					<h1 class="title-text">ADAM DOYLE</h1>
 				  	<h1>About Me</h1>
 					<div class="divider"></div>
-					<p class="lead">I am a third year computer science student and aspiring software developer in Chapel Hill, NC.</p>
+					<p class="lead">I am a computer science student and aspiring software developer in Chapel Hill, NC.</p>
 					<!--Resume link-->
-					<a class="btn btn-lg btn-custom" href="AdamDoyle_Resume.docx" target="_blank">Download Resume</a>
-					<a class="btn btn-lg btn-custom" href="https://linkedin.com/in/adamdoyle630/" target="_blank">LinkedIn</a>
-					<a class="btn btn-lg btn-custom" href="https://github.com/adamdoyle630" target="_blank">GitHub</a>
+                    <a class="btn btn-lg btn-custom" href="AdamDoyle_Resume.docx" target="_blank">Download Resume</a>
+                    <a class="btn btn-lg btn-custom" href="https://linkedin.com/in/adamdoyle630/" target="_blank">LinkedIn</a>
+                    <a class="btn btn-lg btn-custom" href="https://github.com/adamdoyle630" target="_blank">GitHub</a>
 				</div>
 			</div>
 		  </div>
         </section>
         <!-- Education section-->
-        <section class="jumbotron bg-dark" id="education">
-            <div class="container-sm px-4">
-                <div class="row gx-4 justify-content-center">
+        <section id="education">
+            <div class="container-sm pad bg-dark">
+                <div class="row justify-content-center">
                     <div class="col-lg-8">
                         <h1>Education</h1>
                         <div class="divider"></div>
@@ -68,8 +68,8 @@
             </div>
         </section>
         <!-- Skills section-->
-        <section class="jumbotron" id="skills">
-            <div class="container-sm px-4">
+        <section id="skills">
+            <div class="container-sm pad">
                 <div class="row gx-4 justify-content-center">
                     <div class="col-lg-8">
                         <h1>Skills</h1>
@@ -103,8 +103,8 @@
             </div>
         </section>
         <!-- Experience section-->
-        <section class="jumbotron bg-dark" id="projects">
-            <div class="container-sm px-4">
+        <section id="projects">
+            <div class="container-sm pad bg-dark">
                 <div class="row gx-4 justify-content-center">
                     <div class="col-lg-8">
                         <h1>Projects</h1>
@@ -119,19 +119,50 @@
             </div>
         </section>
         <!-- Contact section-->
-        <section class="jumbotron" id="contact">
-            <div class="container-sm px-4">
-                <div class="row gx-4 justify-content-center">
+        <section id="contact">
+            <div class="container-sm pad">
+                <div class="row justify-content-center">
                     <div class="col-lg-8">
                         <h1>Contact</h1>
                         <div class="divider"></div>
-                        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSchojds7fDzzAYvLkb5sWFdtNWSh9ddqPF8M17GSkBbBbyI4Q/viewform?embedded=true" width="640" height="845" frameborder="0" marginheight="0" marginwidth="0"></iframe>
+                        <form action="https://script.google.com/macros/s/AKfycbxchavbdpj05K3WnDZpfJKlf0zwop7ZcCaPiDTBvzycosjtEnpTCfRNaq0YQ40DuNGK/exec" method="POST" onsubmit="return validateForm()" target="hidden_iframe">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" class="form-control" id="name" name="name" placeholder="Enter name">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" class="form-control" id="email" name="email" placeholder="Enter email">
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Enter message</label>
+                                <textarea class="form-control" id="message" name="message" rows="3" placeholder="Enter message here"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-custom">Submit</button>
+                        </form>
+                        <iframe name="hidden_iframe" style="display:none;"></iframe>
+                        <!-- <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSchojds7fDzzAYvLkb5sWFdtNWSh9ddqPF8M17GSkBbBbyI4Q/viewform?embedded=true" width="640" height="845" frameborder="0" marginheight="0" marginwidth="0"></iframe> -->
+                        <script>
+                            function validateForm() {
+                                var name = document.getElementById('name').value;
+                                var email = document.getElementById('email').value;
+                                var message = document.getElementById('message').value;
+                              
+                                if (name === '' || email === '' || message === '') {
+                                    alert('Please fill out all fields');
+                                    return false; // Prevent form submission
+                                }
+                                
+                                alert("Contact form submitted successfully!")
+                                return true; // Allow form submission
+                            }
+                        </script>                            
                     </div>
                 </div>
             </div>
         </section>
         <!-- Footer-->
-        <footer class="jumbotron bg-dark">
+        <footer class="container-sm pad bg-dark">
             <div class="container px-4"><p class="m-0 text-center">
                 <!--Last updated script example-->
                 <script>
